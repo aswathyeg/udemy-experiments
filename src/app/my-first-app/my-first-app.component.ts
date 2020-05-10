@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   
   styleUrls: ['./my-first-app.component.css']
   //inline style example
-  // style:`h1{color:blue}`
+  // styles:`h1{color:blue}`
 })
 export class MyFirstAppComponent implements OnInit {
 
