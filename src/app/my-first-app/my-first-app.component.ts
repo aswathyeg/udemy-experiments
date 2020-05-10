@@ -11,8 +11,12 @@ import { Component, OnInit } from '@angular/core';
   // styles:`h1{color:blue}`
 })
 export class MyFirstAppComponent implements OnInit {
+allowmyfirstapp=false;
 
-  constructor() { }
+  constructor() { setInterval(()=>{
+    this.allowmyfirstapp=true;},2000);
+
+  }
 
   ngOnInit() {
   }
