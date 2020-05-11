@@ -1,6 +1,9 @@
 <p>hii</p>
 <app-my-first-app></app-my-first-app>
 {{title}} 
-<p>
-<button class="btn btn-primary" [disabled]= "!allowmyfirstapp">Add</button>
-</p>
+<p>{{clickme}}</p>
+<button 
+class="btn btn-primary" 
+
+(click)="this.clickme='clicked'">Add</button>
+

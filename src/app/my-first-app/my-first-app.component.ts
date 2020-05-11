@@ -12,13 +12,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyFirstAppComponent implements OnInit {
 allowmyfirstapp=false;
+clickme="not clicked";
+
 
   constructor() { setInterval(()=>{
     this.allowmyfirstapp=true;},2000);
 
   }
-
+  
   ngOnInit() {
   }
-
+  onClick(){
+    
+    this.clickme='clicked';
+  }
 }
