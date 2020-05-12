@@ -6,6 +6,7 @@ class="btn btn-primary"
 
 (click)="onClick()">Add</button>
 </p>
+
 <label>Username:</label>
 <input type="text"
 
@@ -16,3 +17,15 @@ class="btn btn-primary"
     class="btn btn-primary"
     [disabled]="username==''"
     (click)="username=''">ResetUsername</button></p>
+   <!-- <p*ngFor="let name of names"></p>-->
+
+   <button
+    class="btn btn-primary"
+   (click)="onDisplay()"
+   
+   >Display details</button>
+<p *ngIf="paragraph">secret password=tuna</p>
+<div 
+*ngFor="let name of names"
+[ngStyle]="{backgroundColor: name.length >=5 ? 'blue':'transparent'}"
+    >{{name}}</div>
