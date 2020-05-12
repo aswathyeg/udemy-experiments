@@ -24,8 +24,9 @@ class="btn btn-primary"
    (click)="onDisplay()"
    
    >Display details</button>
-<p *ngIf="paragraph">secret password=tuna</p>
+<p 
+     *ngIf="paragraph">secret password=tuna</p>
 <div 
-*ngFor="let name of names"
-[ngStyle]="{backgroundColor: name.length >=5 ? 'blue':'transparent'}"
+    *ngFor="let name of names ; let i=index"
+    [ngStyle]="{backgroundColor: i>=5 ? 'red':'transparent'}"
     >{{name}}</div>
