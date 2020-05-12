@@ -1,1 +1,18 @@
-<p>my-first-app works!</p>
+
+<p>{{clickme}}</p>
+<p>
+<button 
+class="btn btn-primary" 
+
+(click)="onClick()">Add</button>
+</p>
+<label>Username:</label>
+<input type="text"
+
+[(ngModel)]="username">
+
+<p>{{username}}</p>
+<p><button 
+    class="btn btn-primary"
+    [disabled]="username==''"
+    (click)="username=''">ResetUsername</button></p>

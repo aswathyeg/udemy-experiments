@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyFirstAppComponent implements OnInit {
 allowmyfirstapp=false;
 clickme="not clicked";
+username='';
 
 
   constructor() { setInterval(()=>{
@@ -26,4 +27,7 @@ clickme="not clicked";
     
     this.clickme='clicked';
   }
+  //reset(){
+    //this.username=="''";
+//}
 }
