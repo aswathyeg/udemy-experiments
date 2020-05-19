@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MyFirstAppComponent } from './my-first-app/my-first-app.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstAppComponent
+    MyFirstAppComponent,
+    DatabindingComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
