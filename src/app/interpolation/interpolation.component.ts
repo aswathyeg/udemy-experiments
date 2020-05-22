@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interpolation.component.css']
 })
 export class InterpolationComponent implements OnInit {
-
+value=10;
   constructor() { }
 
   ngOnInit() {
