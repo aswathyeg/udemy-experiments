@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 value=10;
+today=new Date();
   constructor() { }
 
   ngOnInit() {
