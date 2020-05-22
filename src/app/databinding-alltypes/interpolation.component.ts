@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-interpolation',
@@ -10,6 +10,9 @@ value=10;
 today=new Date();
 clickme='';
 text='';
+@Input('alert-pop') message1='';//using alias
+@Input()message=''
+
   constructor() { }
 
   ngOnInit() {
@@ -20,4 +23,8 @@ text='';
   onClick(){
 this.clickme='eventbinding';
   }
+  showAlert(){
+    alert(this.message1);
+  }
+  
 }

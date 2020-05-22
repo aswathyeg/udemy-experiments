@@ -17,6 +17,12 @@ class="btn btn-primary"
 {{clickme}}
 
 <hr>
+ <p>Message:{{message}}</p>
+<button 
+class="btn btn-primary"
+(click)="showAlert()">pass input value to component</button>
+
+<hr>
 <label>Enter your text:</label>
 <input [(ngModel)]="text">
 <p>{{text}}</p>

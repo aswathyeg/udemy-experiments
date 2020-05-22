@@ -2,15 +2,16 @@
 <app-my-first-app></app-my-first-app>
 
 <app-databinding></app-databinding>
-<app-interpolation></app-interpolation>
+<app-interpolation [message]="'Demostration of Input Property of a Component'"
+[alert-pop]="val"
+></app-interpolation>
 
 
 <div class="row">
 
     <div class="col-xs-12">
 
-        <app-server-element *ngFor="let serverElement of serverElements"
-      [element]="serverElement"></app-server-element>
+       
         
     </div> 
 </div>
