@@ -26,7 +26,13 @@ class="btn btn-primary"
 <label>Enter your text:</label>
 <input [(ngModel)]="text">
 <p>{{text}}</p>
-
-
+<br>
+Provide name:<input type="text"[(ngModel)]="data.name">
+<br><br>
+Provide email:<input type="text"[(ngModel)]="data.email">
+<br>
+<input type="button" 
+class="btn btn-primary"
+value="Sign Up" (click)="onSubmit()">
 
 

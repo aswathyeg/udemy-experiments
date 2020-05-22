@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-interpolation',
@@ -11,8 +11,9 @@ today=new Date();
 clickme='';
 text='';
 @Input('alert-pop') message1='';//using alias
-@Input()message=''
-
+@Input()message=''//this variable can be accessed by the parent class with []
+@Output()onSignup=new EventEmitter<any>();//this variable can be accessed by the parent class with ()
+data:any={}
   constructor() { }
 
   ngOnInit() {
@@ -26,5 +27,7 @@ this.clickme='eventbinding';
   showAlert(){
     alert(this.message1);
   }
-  
+  onSubmit(){
+this.onSignup.emit(this.data)
+  }
 }
