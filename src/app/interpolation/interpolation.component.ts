@@ -12,5 +12,7 @@ today=new Date();
 
   ngOnInit() {
   }
-
+  returnString(){
+    return "string retured from function";
+  }
 }
