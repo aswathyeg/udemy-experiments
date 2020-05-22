@@ -9,6 +9,7 @@ export class InterpolationComponent implements OnInit {
 value=10;
 today=new Date();
 clickme='';
+text='';
   constructor() { }
 
   ngOnInit() {
