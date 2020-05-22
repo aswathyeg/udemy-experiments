@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class InterpolationComponent implements OnInit {
 value=10;
 today=new Date();
+clickme='';
   constructor() { }
 
   ngOnInit() {
   }
   returnString(){
     return "string retured from function";
+  }
+  onClick(){
+this.clickme='eventbinding';
   }
 }
