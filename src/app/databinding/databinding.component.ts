@@ -8,18 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingComponent implements OnInit {
   servername='';
   servercontent='';
-  elements=[];
-  content='';
+  serverElements=[];
+ // content='';
   constructor() { }
 
   ngOnInit() {
   }
   onAddserver(){
 
+this.serverElements.push({
+  type:'server',
+  name:this.servername,
+  content:this.servercontent
 
+});
   }
 
   onAddserverblueprint(){
+    this.serverElements.push({
+      type:'blueprint',
+      name:this.servername,
+      content:this.servercontent
+    
+    });
 
   }
 
